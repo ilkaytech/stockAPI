@@ -88,7 +88,7 @@ module.exports = {
                     "last_name": "test",
                 }
             }
-        */
+    */
 
     const data = await Token.updateOne({ _id: req.params.id }, req.body, {
       runValidators: true,
@@ -102,9 +102,9 @@ module.exports = {
   },
   delete: async (req, res) => {
     /*
-            #swagger.tags = ["Tokens"]
-            #swagger.summary = "Delete Token"
-        */
+        #swagger.tags = ["Tokens"]
+        #swagger.summary = "Delete Token"
+    */
 
     const data = await Token.deleteOne({ _id: req.params.id });
 
